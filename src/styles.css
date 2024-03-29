@@ -1,0 +1,386 @@
+.node-title {
+  dx: -200;
+  fill: green;
+}
+.Nav {
+  /* background-color: rgb(187, 86, 91); */
+  /* position: fixed; */
+  width: 100vw;
+  background-color: #0a0c39;
+  /* display: flex; */
+  /* margin-bottom: -150px; */
+  /* position: absolute; */
+  /* background: none; */
+  /* margin-top: -5px; */
+  /* margin-bottom: -5px; */
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+p {
+  display: block;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.Nav p {
+  margin-top: 0px;
+  background-color: #0a0c39;
+}
+
+.Tree_Ref {
+  width: 100vw;
+  height: 66vh;
+  background-color: #ccebed;
+}
+
+.fileinpute {
+  /* display: inline-block; */
+
+  width: 100%;
+  padding: 90px 0 0 0;
+  height: 0px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png")
+    center center no-repeat #0a0c39;
+  /* border-radius: 10px; */
+  background-size: 60px 60px;
+}
+#filebtn {
+  display: none;
+
+  width: 50%;
+  padding: 60px 0 0 0;
+  height: 0px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* background: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png")
+    center center no-repeat #e4e4e4; */
+  /* border-radius: 10px; */
+  background-size: 60px 60px;
+  color: black;
+}
+.node-label {
+}
+.App {
+  font-family: sans-serif;
+  /* padding: 10px 100px; */
+}
+
+body {
+  background-color: #282f3b;
+  /* background-color: #ccebed; */
+  color: white;
+  /* margin-right: 0px; */
+}
+
+.uploadHead {
+  position: relative;
+}
+.uploadHead img {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background-color: white;
+}
+
+.Card {
+  background-color: #494e6b;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px 0;
+  /* border-radius: 15px; */
+}
+
+.Card .ImageCont .Img {
+  overflow: hidden;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 5px solid #985e6b;
+}
+
+.Card .ImageCont .Designation {
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #985e6b;
+  border-radius: 30px;
+}
+.Chart {
+  display: "flex";
+  justify-content: "space-around";
+}
+.Chartdetails {
+  width: "40%";
+  background-color: "white";
+  border-radius: "10px";
+  color: "black";
+  height: "205px";
+  overflow-y: "scroll";
+}
+
+.Card .Details .Name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.Card .Details .leftDetails span {
+  font-size: 22px;
+}
+
+.Drop_search {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.Drop_search .Drop,
+.Drop_search .Search {
+  width: calc(50% - 10px);
+  position: relative;
+}
+
+.Drop_search .dropdown .dropdown-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+  gap: 5px;
+  background-color: #494e6b;
+  margin-top: 3px;
+}
+
+.Drop_search .dropdown .dropdown-menu.notactive {
+  display: none;
+}
+.Drop_search .dropdown .dropdown-menu a {
+  padding-left: 10px;
+  font-size: 17px;
+  padding-top: 10px;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+.Drop_search .dropdown .dropdown-menu a:hover {
+  background-color: #98878f;
+}
+.Drop_search .dropdown .dropdown-toggle {
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100%;
+  color: white;
+  left: 0;
+  background-color: #985e6b;
+  text-align: left;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.Drop_search .dropdown .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: 0.255em;
+  right: 10px;
+  top: 20px;
+  transform: translateY(-50%);
+  position: absolute;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.Drop_search .dropdown .dropdown-toggle.active::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: 0.255em;
+  right: 10px;
+  top: 20px;
+  transform: translateY(-50%) rotateZ(-180deg);
+  position: absolute;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.Search {
+  height: 40px;
+  width: calc(100% - 10px);
+  background-color: #985e6b;
+}
+
+.Search input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+  color: white;
+}
+
+.Search input::placeholder {
+  color: white;
+  opacity: 0.4;
+}
+
+.Table_user .Table_head {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  justify-content: space-evenly;
+  border-top: 5px solid #494e6b;
+  padding: 10px 0;
+}
+
+.Table_user .Table_head div {
+  width: calc((100% / 3) - 10px);
+  text-align: left;
+}
+
+.Table_user .Table_users {
+  width: 100%;
+}
+
+.Table_user .Table_users .User_Info {
+  border-top: 2px solid #98878f;
+  padding-bottom: 10px;
+}
+
+.Table_user .Table_users .User_Info.notactive {
+  display: none;
+}
+
+.Table_user .Table_users .Table_item {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #494e6b;
+  padding: 10px 0;
+}
+
+.Table_user .Table_users .Table_item::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: 0.255em;
+  right: 10px;
+  top: 20px;
+  transform: translateY(-50%);
+  position: absolute;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.Table_user .Table_users .Table_item.active::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: 0.255em;
+  right: 10px;
+  top: 20px;
+  transform: translateY(-50%) rotateZ(180deg);
+  position: absolute;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.Table_user .Table_users .Table_item div {
+  width: calc((100% / 3) - 10px);
+  text-align: left;
+  pointer-events: none;
+}
+
+.Piecontainer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ccebed;
+  padding-bottom: 100px;
+  width: 100vw;
+  padding-top: 1%;
+}
+
+@media screen and (max-width: 770px) {
+  .Card {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .App {
+    padding: 10px 40px;
+    text-align: center;
+  }
+  .Card .Details .Name {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .Card .Details .leftDetails span {
+    font-size: 13px;
+  }
+
+  .Drop_search {
+    flex-direction: column;
+  }
+
+  .Drop_search .Drop,
+  .Drop_search .Search {
+    width: 100%;
+  }
+
+  .Drop_search .Search {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .Drop_search .Drop .dropdown .dropdown-menu {
+    position: relative;
+  }
+
+  .uploadHead img {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
