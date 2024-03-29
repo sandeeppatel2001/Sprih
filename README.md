@@ -1,8 +1,10 @@
 # Sprih Project
 
-Welcome to the Sprih project! This repository contains the code for the Sprih website, a project created by Sandeep Patel.
+Welcome to the Sprih project! This repository contains the code for the Sprih assignment, a project created by Sandeep Patel.
 
-You can view the deployed version of the project [https://sprihsandeep.netlify.app](https://sprihsandeep.netlify.app/), and the code is deployed on [https://github.com/sandeeppatel2001/Sprih](https://github.com/sandeeppatel2001/Sprih).
+### `**`You can view the deployed version of the project Here [https://sprihsandeep.netlify.app](https://sprihsandeep.netlify.app/).
+
+### `**`Code is deployed on Github Here [https://github.com/sandeeppatel2001/Sprih](https://github.com/sandeeppatel2001/Sprih).
 
 ## Project Setup Guide
 
